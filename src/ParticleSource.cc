@@ -5,7 +5,7 @@
 BeginnerGeneratorAction::BeginnerGeneratorAction() {
 	particleGun = new G4ParticleGun(1);
 	auto table = G4ParticleTable::GetParticleTable();
-	particleGun->SetParticleDefinition(table->FindParticle("neutron"));
+	particleGun->SetParticleDefinition(table->FindParticle("e-"));
 	particleGun->SetParticleMomentumDirection(G4ThreeVector(0, 0, 1));
 	particleGun->SetParticleEnergy(10 * MeV);
 }

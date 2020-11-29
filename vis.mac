@@ -1,0 +1,11 @@
+/run/numberOfThreads 32
+
+/run/initialize
+
+#/vis/open OGL
+#/vis/drawVolume
+#/vis/scene/add/trajectories smooth
+#/vis/modeling/trajectories/create/drawByParticleID
+#/vis/viewer/set/autoRefresh true
+
+/run/beamOn 10000
